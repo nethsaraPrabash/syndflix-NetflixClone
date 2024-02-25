@@ -1,0 +1,344 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+  }
+
+  * {
+      font-family: arial,Arial, Helvetica, sans-serif;
+      color: #333;
+
+  }
+
+  h3 {
+    color: #e5e5e5;
+  }
+
+  a h3 :hover {
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+  
+  }
+  
+  .wrapper {
+    min-width: 1050px;
+    min-height: 100%;
+    background-color: #141414;
+
+
+  }
+  .signInContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #efefee;
+  }
+  
+  .column {
+  
+    background-color: #fff;
+      min-height: 300px;
+      max-height: 100%;
+      width: 450px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 1px 12px;
+      padding: 20px 35px;
+      overflow-y: auto;
+  }
+  
+  
+  .column form {
+    margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .column form input[type="text"],
+   .column form input[type="password"],
+   .column form input[type="email"] {
+  
+      font-size: 14px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #dedede;
+  }
+
+  .column form input[type="submit"] {
+    background-color: #e30909;
+    color: #fff;
+    font-size: 16px;
+    height: 36px;
+    width: 88px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+.column .header {
+  padding: 20px 0;
+}
+    
+.column h3 {
+  font-size: 24px;
+  margin: 0;
+  line-height: 32px;
+  padding-top: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.column .header span {
+  font-size: 14px;
+}
+
+.header img {
+  width: 150px;
+  height: 60px;
+  margin-left: -10px;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.signInMessage {
+  color: #000;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.previewVideo,
+.previewImage {
+
+  width: 100%;
+
+
+}
+
+.previewContainer {
+ position: relative;
+ display: flex;
+
+}
+
+.previewContainer.small {
+  width: 230px;
+  height: 130px;
+  margin-right: 4px;
+  display: inline-flex;
+}
+
+.previewContainer.small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-fit: cover;
+}
+
+
+.previewOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+.previewOverlay .mainDetails h3{
+  color: #fff;
+  font-size: 40px;
+  margin: 15px 0;
+
+}
+
+.previewOverlay .mainDetails {
+
+  position: relative;
+  top: 35%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainDetails button {
+
+  background-color: rgba(51,51,51,0.4);
+  color: #fff;
+  border: none;
+  min-width: 150px;
+  padding: 0 38px;
+  height: 50px;
+  max-height: 50px;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+button i {
+  color: inherit;
+}
+
+.mainDetails button:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+  color: #000;
+}
+
+.catagory {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+
+}
+
+.entities {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.previewCategories {
+  padding: 0 50px;
+}
+
+.errorBanner {
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.season {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+
+.episodeContainer {
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 4px;
+}
+
+.episodeContainer .contents {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+.episodeContainer img {
+  width: 230px;
+  height: 129px;
+  object-fit: cover;
+}
+
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span {
+  color: #fff;
+  width: 100%;
+  white-space: normal;
+}
+
+.episodeContainer .videoInfo {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.previewCategories.noScroll .category .entities {
+  white-space: normal;
+}
+
+.topBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 15px 60px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.topBar.scrolled {
+  background-color: #141414;
+
+}
+
+.LogoContainer{
+  height: 100%;
+
+}
+
+.LogoContainer img {
+  width: 150px;
+  height: 50px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+
+}
+
+.nav ul li {
+  display: inline;
+  margin: 0 10px;
+  padding: 0;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.nav a {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.nav a:hover {
+  color: #e5e5e5;
+}
+.rightItems{
+  text-align: right;
+  flex: 1;
+}
+
+.rightItems i {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.filmName {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  line-height: 32px;
+  padding-top: 16px;
+  font-weight: 500;
+}
